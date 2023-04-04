@@ -9,7 +9,7 @@ const VideoCard = ({ video }) => {
     return (
         <Link to={`/video/${video?.videoId}`}>
             <div className="flex flex-col mb-8">
-                <div className="relative h-48 md:h-40 md:rounded-xl overflow-hidden">
+                <div className="relative h-48 md:h-40 rounded-xl overflow-hidden hover:rounded-none transition-all ">
                     <img
                         className="h-full w-full object-cover"
                         src={video?.thumbnails[0]?.url}

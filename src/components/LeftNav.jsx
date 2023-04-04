@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import LeftNavMenuItem from "./LeftNavMenuItem";
 import { categories } from "../utils/constants";
@@ -26,9 +26,7 @@ const LeftNav = () => {
 
     return (
         <div
-            className={`md:block w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
-                mobileMenu ? "translate-x-0" : ""
-            }`}
+            className={`md:block w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative z-10  md:translate-x-0 transition-all} ${mobileMenu ?  "translate-x-0" : "translate-x-[-240px]"}` }
         >
             <div className="flex px-5 flex-col">
                 {categories.map((item) => {
@@ -54,9 +52,10 @@ const LeftNav = () => {
                     );
                 })}
                 <hr className="my-5 border-white/[0.2]" />
-                <div className="text-white/[0.5] text-[12px]">
+                
+                <Link to='https://www.linkedin.com/in/piyush-kumarg/' target="_blank" className="text-white/[0.5] text-[12px]">
                     Clone by: Piyush Kumar
-                </div>
+                </Link>
             </div>
         </div>
     );
