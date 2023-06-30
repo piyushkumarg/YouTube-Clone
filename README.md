@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# YouTube Lite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+YouTube Lite is a lightweight web application that allows users to browse and watch YouTube videos. It provides a simplified and intuitive interface for a seamless video watching experience.
 
-## Available Scripts
+### Deployed Application [See Here](https://youtube-piy.netlify.app/)
 
-In the project directory, you can run:
+![youtube-clone](https://github.com/piyushkumarg/TicTacToe/assets/83285872/55a491c9-6d92-4f46-8daf-b629c22438b7)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Browse and search for YouTube videos.
+- Play videos directly within the application.
+- Utilize the power of React Router DOM for smooth navigation between different views.
+- Display video durations in an abbreviated format using the js-abbreviation-number library.
+- Integrate popular icons from the React Icons library to enhance the user interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
+To get started  you can simply clone this `YouTube-lite` repository and install the dependencies.
 
-### `npm test`
+Clone the `YouTube-lite` repository using git:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone git clone https://github.com/piyushkumarg/YouTube-Clone
 
-### `npm run build`
+cd ecommerce-frontend
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies with this command:
+```bash
+npm install
+```
+### Configuration
+To fetch data from the YouTube API, you need to obtain an API key from the YouTube Rapid API. Follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Visit the  [Rapid API](https://rapidapi.com/) website
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Sign up for an account and obtain an API key.
 
-### `npm run eject`
+- In the project directory, create a .env file.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Add the following line to the .env file,replacing YOUR_API_KEY with your actual API key:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+REACT_APP_YOUTUBE_API_KEY=YOUR_API_KEY
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Run the application with this command:
+```bash
+npm start
+```
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* React
+* React Router DOM
+* Contex API
+* Tailwind CSS
+* React Icons
+* axios
+* Rapid API
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Contributions are welcome! If you find any issues or would like to suggest enhancements, please create a new issue or submit a pull request.
