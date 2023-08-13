@@ -22,7 +22,7 @@ Clone the `YouTube-lite` repository using git:
 ```bash
 git clone git clone https://github.com/piyushkumarg/YouTube-Clone
 
-cd ecommerce-frontend
+cd YouTube-Clone
 ```
 
 Install dependencies with this command:
@@ -55,6 +55,7 @@ npm start
 * Contex API
 * Tailwind CSS
 * React Icons
+* React Player
 * axios
 * Rapid API
 
