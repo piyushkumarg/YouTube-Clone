@@ -7,6 +7,8 @@ import SearchResult from "./components/SearchResult";
 import VideoDetails from "./components/VideoDetails";
 
 import { AppContext } from "./context/contextApi";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
               element={<SearchResult />}
             />
             <Route path="/video/:id" element={<VideoDetails />} />
+            {/* <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} /> */}
           </Routes>
         </div>
       </BrowserRouter>
