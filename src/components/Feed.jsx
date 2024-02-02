@@ -1,9 +1,7 @@
 import React, { useContext, useEffect } from "react";
-
 import { Context } from "../context/contextApi";
 import LeftNav from "./LeftNav";
 import VideoCard from "./VideoCard";
-import { Link } from "react-router-dom";
 
 const Feed = () => {
   const { loading, searchResults } = useContext(Context);
@@ -26,8 +24,8 @@ const Feed = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center h-full w-full text-xl text-red-500  absolute z-50 backdrop-blur">
-        {loading && (
+      {loading && (
+        <div className="flex items-center justify-center h-full w-full text-xl text-red-500  absolute z-50 backdrop-blur">
           <div className="flex flex-col items-center justify-between gap-10">
             <div className="flex flex-col gap-4 items-center justify-center bg-gray-900 shadow-lg animate-bounce hover:animate-none shadow-orange-300 leading-8 w-96 h-96 p-11 rounded-full">
               <p className="text-center">
@@ -36,7 +34,9 @@ const Feed = () => {
                 reached. Please be patient and consider trying again later.
               </p>
 
-              <p className="text-2xl font-medium tracking-widest text-yellow-200">or</p>
+              <p className="text-2xl font-medium tracking-widest text-yellow-200">
+                or
+              </p>
             </div>
             <a href="https://piyush-kumar.vercel.app/" target="_blank">
               <button className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
@@ -44,8 +44,8 @@ const Feed = () => {
               </button>
             </a>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };
